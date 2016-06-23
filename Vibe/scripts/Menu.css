@@ -1,0 +1,101 @@
+﻿a{
+    text-decoration: none;
+}
+.dropDownMenu {
+        top: 44px;
+    left: 510px;
+    width: 470px;
+    position: absolute;
+    visibility: inherit;
+    height: 40px;
+}
+
+.dropDownMenu .itemsContainer {
+    width: calc(100%-0px);
+    white-space: nowrap;
+    
+    overflow: hidden;
+}
+
+.moreContainer {
+    overflow: visible;
+    display: inherit;
+    white-space: nowrap;
+    width: auto;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.dropWrapper {
+    z-index: 99999;
+    display: block;
+    opacity: 1;
+    visibility: hidden;
+    position: absolute;
+    margin-top: 7px;
+}
+
+.repeaterButton {
+    height:50%;
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    cursor: pointer;
+    font: normal normal normal 14px/1.1em enriqueta,serif;
+    border-left: 1px solid rgba(88, 85, 81, 1);
+}
+
+    .repeaterButton:hover {
+        cursor: default !important;
+    }
+
+    .repeaterButton::selection .s2repeaterButtonlabel {
+        color: #45BA01;
+        transition: color 0.4s ease 0s;
+    }
+
+
+.repeaterButtonlabel {
+    color: #A6230E;
+    transition: color 0.4s ease 0s;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.repeaterButtonlabel {
+    color: #A6230E;
+    transition: color 0.4s ease 0s;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.repeaterButton_wrapper {
+    padding: 0 5px;
+}
+
+
+
+
+.repeaterButton[data-state~="drop"] {
+    width:50%;
+    display: block;
+    border: 0;
+    border-top: 1px solid rgba(88, 85, 81, 1);
+}
+
+    .repeaterButton[data-state~="drop"] .repeaterButtonlabel {
+        display: inline-block;
+        padding: 0 .5em;
+    }
+
+    .repeaterButton[data-state~="drop"] .repeaterButton_wrapper {
+        padding: 0;
+    }
+
+.repeaterButton[data-listposition="top"] {
+    border: 0;
+}
+
+.repeaterButton[data-listposition="dropLonely"] {
+    border: 0;
+}
